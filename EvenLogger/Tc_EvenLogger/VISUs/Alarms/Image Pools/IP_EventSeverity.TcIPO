@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <ImagePool Name="IP_EventSeverity" Id="{ec5d2e6c-1628-48a9-b8fa-ba8d4bba45fd}">
+    <XmlArchive>
+      <Data>
+        <o xml:space="preserve" t="ImagePoolObject">
+          <v n="UniqueIdGenerator">"18"</v>
+          <l n="BitmapPool" t="ArrayList" cet="ImagePoolItem">
+            <o>
+              <v n="BitmapID">"critical"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|VISUs\Alarms\Images\critical.svg"</v>
+              <v n="ItemID">8</v>
+            </o>
+            <o>
+              <v n="BitmapID">"error"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|VISUs\Alarms\Images\error.svg"</v>
+              <v n="ItemID">9</v>
+            </o>
+            <o>
+              <v n="BitmapID">"info"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|VISUs\Alarms\Images\info.svg"</v>
+              <v n="ItemID">10</v>
+            </o>
+            <o>
+              <v n="BitmapID">"verbose"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|VISUs\Alarms\Images\verbose.svg"</v>
+              <v n="ItemID">11</v>
+            </o>
+            <o>
+              <v n="BitmapID">"warning"</v>
+              <v n="FileID">"5ce3da45-db07-42e7-a21c-a00fff4ed8f6|VISUs\Alarms\Images\warning.svg"</v>
+              <v n="ItemID">12</v>
+            </o>
+            <o>
+              <v n="BitmapID">""</v>
+              <v n="FileID">""</v>
+              <v n="ItemID">13</v>
+            </o>
+          </l>
+          <v n="GuidInit">{23993392-b6da-4d8f-8ae2-6420a9108009}</v>
+          <v n="GuidReInit">{ba41e694-a266-43d2-b086-686aab984698}</v>
+          <v n="GuidExitX">{08ce7323-3025-41fb-919a-7343070c00d5}</v>
+          <v n="ValidIds">true</v>
+        </o>
+      </Data>
+      <TypeList>
+        <Type n="ArrayList">System.Collections.ArrayList</Type>
+        <Type n="Boolean">System.Boolean</Type>
+        <Type n="Guid">System.Guid</Type>
+        <Type n="ImagePoolItem">{215b2719-0347-4e4d-ba85-8bcd66946f66}</Type>
+        <Type n="ImagePoolObject">{bb0b9044-714e-4614-ad3e-33cbdf34d16b}</Type>
+        <Type n="Int32">System.Int32</Type>
+        <Type n="String">System.String</Type>
+      </TypeList>
+    </XmlArchive>
+  </ImagePool>
+</TcPlcObject>

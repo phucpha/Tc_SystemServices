@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL" Id="{9882fc3d-f5ba-42d3-ab24-0c6b8782f067}">
+    <Declaration><![CDATA[VAR_GLOBAL CONSTANT
+	(* --- Alarm controler --- *)
+	iMAX_DEFINITION_EVENTS					: UDINT := 512; 													(* Maximum size of active alarms table *)
+	iMAX_EVENTS								: UDINT	:= 512; 													(* Maximum size of events table *) 
+	
+	(* --- Recipes manager --- *)
+	iMAX_NUMBER_OF_RECIPES					: USINT 		:= 128;												(* Defines maximum number of recipes stored in recipe manager *)
+	iMAX_NUMBER_OF_VARIABLES_IN_RECIPES		: USINT			:= 128;												(* Defines maximum number of parameters stored inside the recipe *)
+	iMAX_RECIPE_NAME_LENGTH					: INT			:= 80;												(* Defines maximum length of the recipe name *)
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

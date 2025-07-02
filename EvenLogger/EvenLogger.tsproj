@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.56">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{25B3B1D6-758B-467B-A654-CBCF5693043C}" PersistentType="true">ShellRecipesEventClass</Name>
+			<DisplayName TxtId=""><![CDATA[NewEventClass_DisplayText]]></DisplayName>
+			<EventId>
+				<Name Id="1">Failed</Name>
+				<DisplayName TxtId=""><![CDATA[Recipes manager failed error]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="2">Parameter</Name>
+				<DisplayName TxtId=""><![CDATA[Recipes manager parameter error]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="3">NotInitialized</Name>
+				<DisplayName TxtId=""><![CDATA[Recipes manager not initialized]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="4">NotImplemented</Name>
+				<DisplayName TxtId=""><![CDATA[Recipes manager not implemented]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="5">NoObject</Name>
+				<DisplayName TxtId=""><![CDATA[Recipes manager no object error]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="6">FileNoMemory</Name>
+				<DisplayName TxtId=""><![CDATA[Recipes manager file has no memory]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="7">FileNotFound</Name>
+				<DisplayName TxtId=""><![CDATA[Recipes manager file not found]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="8">RecipeMismatch</Name>
+				<DisplayName TxtId=""><![CDATA[Recipe mismatch error]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="9">RecipeSave</Name>
+				<DisplayName TxtId=""><![CDATA[Recipe save error]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="10">RecipeNotFound</Name>
+				<DisplayName TxtId=""><![CDATA[Recipe not found]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="11">DefNotFound</Name>
+				<DisplayName TxtId=""><![CDATA[Recipe definition not found]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="12">AlreadyExist</Name>
+				<DisplayName TxtId=""><![CDATA[Recipe already exist]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="13">NoManagerSet</Name>
+				<DisplayName TxtId=""><![CDATA[No recipe manager set]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="14">NotAllVariable</Name>
+				<DisplayName TxtId=""><![CDATA[Not all recipe variables were loaded]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="15">RecipeNoMemory</Name>
+				<DisplayName TxtId=""><![CDATA[Recipe has no memory]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="16">ManagerLocked</Name>
+				<DisplayName TxtId=""><![CDATA[Recipe manager locked during online change]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="17">SourceExhausted</Name>
+				<DisplayName TxtId=""><![CDATA[Recipe manager source exhausted]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="19">SourceIllegal</Name>
+				<DisplayName TxtId=""><![CDATA[Recipe manager source illegal]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<EventId>
+				<Name Id="18">TargetExhausted</Name>
+				<DisplayName TxtId=""><![CDATA[Recipe manager target exhausted]]></DisplayName>
+				<Severity>Warning</Severity>
+			</EventId>
+			<Hides>
+				<Hide GUID="{3E7F48D0-D071-4048-B493-6295A263918A}"/>
+				<Hide GUID="{1543E363-55AB-47EF-8D36-37A7D29ACA67}"/>
+				<Hide GUID="{42981D4E-CE93-4A7B-8DB6-4BE85BBC44DF}"/>
+				<Hide GUID="{EC4FAFF9-0C74-4D00-A508-FB029B1B0DF5}"/>
+				<Hide GUID="{C26F9BC9-6AB8-48D8-90CC-89E9B8587A6C}"/>
+			</Hides>
+		</DataType>
+	</DataTypes>
+	<Project ProjectGUID="{774CD481-B752-44D2-B3CE-6598C82705FA}" Target64Bit="true" ShowHideConfigurations="#x3c7">
+		<System>
+			<Tasks>
+				<Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
+					<Name>PlcTask</Name>
+				</Task>
+				<Task Id="4" Priority="30" CycleTime="2000000" AmsPort="351" DisableFpExceptions="true" AdtTasks="true">
+					<Name>VISU_TASK</Name>
+				</Task>
+			</Tasks>
+		</System>
+		<Plc>
+			<Project File="Tc_EvenLogger.xti"/>
+		</Plc>
+	</Project>
+</TcSmProject>
