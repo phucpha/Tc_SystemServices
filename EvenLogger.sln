@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # TcXaeShell Solution File, Format Version 11.00
 VisualStudioVersion = 15.0.33403.129
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{B1E792BE-AA5F-4E3C-8C82-674BF9C0715B}") = "EvenLogger", "EvenLogger.tsproj", "{774CD481-B752-44D2-B3CE-6598C82705FA}"
+Project("{B1E792BE-AA5F-4E3C-8C82-674BF9C0715B}") = "Tc_SytemServices", "Tc_SytemServices.tsproj", "{774CD481-B752-44D2-B3CE-6598C82705FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

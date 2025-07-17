@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.56" ClassName="CNestedPlcProjDef">
 	<Project GUID="{8102206E-E9F1-4BF0-83F3-01BDB8D74803}" Name="Tc_EvenLogger" PrjFilePath="..\..\Tc_EvenLogger\Tc_EvenLogger.plcproj" TmcFilePath="..\..\Tc_EvenLogger\Tc_EvenLogger.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
-		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcHash="{EE5A3433-FBED-5E1E-9C21-78AADF56A460}">
+		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="Tc_EvenLogger\Tc_EvenLogger.tmc" TmcHash="{79FAE50F-052E-2B4C-391A-FD0225641D00}">
 			<Name>Tc_EvenLogger Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Contexts>
